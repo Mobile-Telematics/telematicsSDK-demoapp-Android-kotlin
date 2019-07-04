@@ -5,10 +5,8 @@ This is an app that demostrate using of RaxelPulse framework. The app will track
 # Installation
   - clone this repository to local folder
   - open project with Android Studio
-  - replace stub with your device token:
-    ```sh
-    val api = TrackingApi.getInstance()
-    api.initialize(this, settings)
+  - Open App.kt file and replace stub "YOUR TOKEN" with your real device token:
+    ```
     api.setDeviceID("YOUR TOKEN")
     ```
   - build project and run
