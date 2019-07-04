@@ -1,4 +1,4 @@
-package com.example.testandroidgitflow
+package com.raxeltemematics.demoapp
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater

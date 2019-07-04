@@ -1,4 +1,4 @@
-package com.example.testandroidgitflow
+package com.raxeltemematics.demoapp
 
 data class TripPointModel (
     val latitude: Double = 0.toDouble(),

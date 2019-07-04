@@ -1,4 +1,4 @@
-package com.example.testandroidgitflow
+package com.raxeltemematics
 
 import android.app.Application
 import com.raxeltelematics.v2.sdk.Settings

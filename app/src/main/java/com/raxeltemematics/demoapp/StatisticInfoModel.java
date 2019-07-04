@@ -1,7 +1,5 @@
-package com.example.testandroidgitflow;
+package com.raxeltemematics.demoapp;
 
-
-import android.support.annotation.StringRes;
 
 import com.github.mikephil.charting.data.Entry;
 

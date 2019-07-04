@@ -1,4 +1,4 @@
-package com.example.testandroidgitflow
+package com.raxeltemematics.demoapp
 
 import android.content.Intent
 import android.os.Bundle
