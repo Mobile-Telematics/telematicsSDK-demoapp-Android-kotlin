@@ -10,4 +10,5 @@ This is an app that demostrate using of RaxelPulse framework. The app will track
     val api = TrackingApi.getInstance()
     api.initialize(this, settings)
     api.setDeviceID("YOUR TOKEN")
+    ```
   - build project and run
