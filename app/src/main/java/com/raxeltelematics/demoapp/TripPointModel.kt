@@ -1,4 +1,4 @@
-package com.raxeltemematics.demoapp
+package com.raxeltelematics.demoapp
 
 data class TripPointModel (
     val latitude: Double = 0.toDouble(),

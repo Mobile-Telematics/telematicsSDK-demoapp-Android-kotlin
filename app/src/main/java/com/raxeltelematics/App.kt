@@ -1,4 +1,4 @@
-package com.raxeltemematics
+package com.raxeltelematics
 
 import android.app.Application
 import com.raxeltelematics.v2.sdk.Settings
@@ -11,12 +11,11 @@ class App : Application() {
 
         val settings = Settings(
             isSensorFull = true,
-            stopTrackingTimeout = Settings.stopTrackingTimeNormal,
-            accuracy = Settings.accuracyNormal,
+            stopTrackingTimeout = Settings.stopTrackingTimeHigh,
+            accuracy = Settings.accuracyHigh,
             autoStartOn = true
         )
         val api = TrackingApi.getInstance()
         api.initialize(this, settings)
-        api.setDeviceID("YOUR TOKEN")
     }
 }

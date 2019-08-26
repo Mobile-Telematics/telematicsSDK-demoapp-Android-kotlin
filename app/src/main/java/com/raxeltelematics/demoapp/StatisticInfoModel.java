@@ -1,4 +1,4 @@
-package com.raxeltemematics.demoapp;
+package com.raxeltelematics.demoapp;
 
 
 import com.github.mikephil.charting.data.Entry;

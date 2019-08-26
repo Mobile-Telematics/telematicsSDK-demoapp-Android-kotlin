@@ -8,10 +8,42 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:visibility="visible"
+        android:id="@+id/deviceId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/enable_manual_sdk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable sdk" />
+
+    <Button
+        android:id="@+id/disable_manual_sdk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable sdk" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start tracking manually" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Stop tracking manually" />
+
     <Button
         android:id="@+id/dashboardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:text="Dashboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

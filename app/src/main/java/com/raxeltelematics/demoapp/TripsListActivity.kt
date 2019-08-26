@@ -1,4 +1,4 @@
-package com.raxeltemematics.demoapp
+package com.raxeltelematics.demoapp
 
 import android.content.Intent
 import android.os.Bundle

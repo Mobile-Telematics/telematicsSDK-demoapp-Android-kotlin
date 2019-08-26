@@ -1,4 +1,4 @@
-package com.raxeltemematics.demoapp
+package com.raxeltelematics.demoapp
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -128,7 +128,7 @@ class TrackDetailsActivity : AppCompatActivity() {
             if (!details.hasOriginChanged) {
                 originButton.setOnClickListener {
                     originButton.isEnabled = false
-                    loadDist(originButton)
+                    loadDict(originButton)
                 }
             }
             totalRating.text = "${details.rating.toInt()}/5"
@@ -146,7 +146,7 @@ class TrackDetailsActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadDist(originButton: Button) {
+    private fun loadDict(originButton: Button) {
         val disposable = Single.fromCallable {
             TrackingApi.getInstance().getTrackOriginDict(Locale.EN)
         }.doOnError {

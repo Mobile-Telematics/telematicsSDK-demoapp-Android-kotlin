@@ -1,12 +1,12 @@
 # Raxel demo app
 
-This is an app that demostrate using of RaxelPulse framework. The app will track the person's driving behavior such as speeding, turning, braking and several other things.
+This is an app that demostrate using of RaxelPulse SDK. The app will track the person's driving behavior such as speeding, turning, braking and several other things.
 
 # Installation
   - clone this repository to local folder
   - open project with Android Studio
-  - Open App.kt file and replace stub "YOUR TOKEN" with your real device token:
+  - Open MainActivity.kt file and setup "YOUR_TOKEN" with your real device token:
     ```
-    api.setDeviceID("YOUR TOKEN")
+    private const val YOUR_TOKEN = ""  // set your token
     ```
   - build project and run

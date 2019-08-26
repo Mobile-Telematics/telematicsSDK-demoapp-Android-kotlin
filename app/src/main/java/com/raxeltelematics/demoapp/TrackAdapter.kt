@@ -1,4 +1,4 @@
-package com.raxeltemematics.demoapp
+package com.raxeltelematics.demoapp
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
