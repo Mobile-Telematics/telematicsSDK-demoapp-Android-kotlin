@@ -116,7 +116,7 @@
     </GridLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/gridView"
         android:layout_centerHorizontal="true"
@@ -125,27 +125,29 @@
 
         <Button
             android:id="@+id/maneuversStatView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
             android:text="Maneuvers statistic" />
 
         <Button
             android:id="@+id/speedingStatView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Speeding statistic" />
 
         <Button
             android:id="@+id/mileageStatView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
             android:text="Mileage statistic" />
 
         <Button
             android:id="@+id/phoneStatView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone Usage statistic" />
     </LinearLayout>

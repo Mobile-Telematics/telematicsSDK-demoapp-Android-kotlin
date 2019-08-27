@@ -29,6 +29,9 @@ class TrackAdapter(val objects: List<TrackViewModel>, val selectedBlock: (trackI
         holder.view.setOnClickListener {
             selectedBlock(item.trackId!!)
         }
+        holder.view.detailsButton.setOnClickListener {
+            selectedBlock(item.trackId!!)
+        }
     }
 
     // Return the size of your dataset (invoked by the layout manager)

@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import com.here.android.mpa.common.GeoCoordinate
-import com.here.android.mpa.common.GeoPolyline
-import com.here.android.mpa.common.Image
-import com.here.android.mpa.common.OnEngineInitListener
+import com.here.android.mpa.common.*
 import com.here.android.mpa.mapping.*
 import com.here.android.mpa.mapping.Map
 import com.raxeltelematics.v2.sdk.TrackingApi
@@ -63,17 +60,16 @@ class TrackDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_track_details_v2)
 
-        val item2 = supportFragmentManager!!.findFragmentById(R.id.trip_view_map) as SupportMapFragment
+        val supportMapFragment = supportFragmentManager!!.findFragmentById(R.id.trip_view_map) as SupportMapFragment
 
-        item2.init {
+        supportMapFragment.init {
             if (it == OnEngineInitListener.Error.NONE) {
-                map = item2.map
+                map = supportMapFragment.map
+
+                trackId = intent!!.extras!!.getString(EXTRA_TRACK_ID)!!
+                loadTrackDetails(trackId)
             }
         }
-
-        trackId = intent!!.extras!!.getString(EXTRA_TRACK_ID)!!
-
-        loadTrackDetails(trackId)
     }
 
     private fun loadTrackDetails(trackId: String) {
@@ -278,14 +274,20 @@ class TrackDetailsActivity : AppCompatActivity() {
                 val tripPointModel = tripPoints[0]
                 var latitude = tripPointModel.latitude
                 latitude -= 0.02
-                map!!.setCenter(
-                        GeoCoordinate(
-                                latitude, tripPointModel
-                                .longitude, 5.0
-                        ), Map.Animation.NONE
-                )
+                centerMapByRoute(tripPoints)
                 map!!.setUseSystemLanguage()
             }
         }
+    }
+
+    private fun centerMapByRoute(tripPoints: List<TripPointModel>) {
+        val geoCoords: MutableList<GeoCoordinate> = mutableListOf()
+        tripPoints.forEach { point ->
+            geoCoords.add(GeoCoordinate(point.latitude, point.longitude))
+        }
+        val geoPolyline = GeoPolyline(geoCoords)
+        val boundingBox = geoPolyline.boundingBox
+        boundingBox.expand(850F, 850F)
+        map?.zoomTo(boundingBox, Map.Animation.NONE, Map.MOVE_PRESERVE_ORIENTATION)
     }
 }
