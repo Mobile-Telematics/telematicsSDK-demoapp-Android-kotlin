@@ -13,4 +13,10 @@
     <color name="graphColor1">#417505</color>
     <color name="graphColor2">#F5A623</color>
     <color name="graphColor3">#a8003399</color>
+
+    <!-- Overrided SDK resources -->
+    <color name="colorTelematicsDialogAlertButtonActive">#54c751</color>
+    <color name="colorTelematicsWizardButtonNorm">#54c751</color>
+    <color name="colorTelematicsWizardButtonPressed">#4AD460</color>
+
 </resources>

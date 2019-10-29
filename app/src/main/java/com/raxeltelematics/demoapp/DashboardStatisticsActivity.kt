@@ -2,7 +2,7 @@ package com.raxeltelematics.demoapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.raxeltelematics.v2.sdk.TrackingApi
 import com.raxeltelematics.v2.sdk.server.model.sdk.DashboardInfo
 import io.reactivex.Single

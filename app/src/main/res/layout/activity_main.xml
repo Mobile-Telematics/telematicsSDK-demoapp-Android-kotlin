@@ -15,6 +15,18 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/startWizard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Permissions Wizard" />
+
+    <Button
+        android:id="@+id/startPermsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Permissions Dialog" />
+
+    <Button
         android:id="@+id/enable_manual_sdk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

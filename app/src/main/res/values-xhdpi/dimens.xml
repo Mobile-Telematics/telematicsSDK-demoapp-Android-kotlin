@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Overrided SDK resources -->
+<dimen name="dialog_telematics_view_bubble_corners">20dp</dimen>
+<dimen name="dialog_telematics_button_corners">35dp</dimen>
+
+</resources>

@@ -3,8 +3,8 @@ package com.raxeltelematics.demoapp
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import com.github.mikephil.charting.components.AxisBase

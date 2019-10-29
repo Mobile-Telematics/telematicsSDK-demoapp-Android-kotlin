@@ -2,8 +2,8 @@ package com.raxeltelematics.demoapp
 
 import android.app.AlertDialog
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import com.here.android.mpa.common.*
 import com.here.android.mpa.mapping.*
@@ -120,12 +120,16 @@ class TrackDetailsActivity : AppCompatActivity() {
         if (details != null) {
 //            trip_view_map.
             originButton.text = getString(arrayOriginDescr[arrayOriginTypesStr.indexOf(details.originalCode!!)])
-            originButton.isEnabled = !details.hasOriginChanged
-            if (!details.hasOriginChanged) {
-                originButton.setOnClickListener {
-                    originButton.isEnabled = false
-                    loadDict(originButton)
-                }
+//            originButton.isEnabled = !details.hasOriginChanged
+//            if (!details.hasOriginChanged) {
+//                originButton.setOnClickListener {
+//                    originButton.isEnabled = false
+//                    loadDict(originButton)
+//                }
+//            }
+            originButton.setOnClickListener {
+                originButton.isEnabled = false
+                loadDict(originButton)
             }
             totalRating.text = "${details.rating.toInt()}/5"
             distance.text = "${String.format("%.1f", details.distance)} km"
