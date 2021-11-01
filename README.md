@@ -2,6 +2,10 @@
 
 This is an app that demostrate using of Telematics SDK. The app will track the person's driving behavior such as speeding, turning, braking and several other things.
 
+Here you can find a short video guide, how to add Telematics SDK to your Android app:
+
+[![Watch the video](https://github.com/Mobile-Telematics/telematicsSDK-demoapp-Android-kotlin/blob/master/Android%20Telematics%20SDK.png)](https://youtu.be/1LkpJ9lndB4)
+
 # Installation
   - clone this repository to local folder
   - open project with Android Studio
